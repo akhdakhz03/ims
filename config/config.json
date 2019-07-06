@@ -1,0 +1,19 @@
+{
+    "mode": "development",
+    "server":{
+        "host": "0.0.0.0",
+        "port": 2325
+    },
+    "database":{
+        "mysql":{
+            "host":"localhost",
+            "user": "ijah",
+            "password": "ijah2019",
+            "port": "3306",
+            "dbname": "ijahstore"
+        }
+    },
+    "secure": false,
+    "crt_file": "",
+    "key_file": ""
+}
