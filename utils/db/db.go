@@ -5,6 +5,7 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	"github.com/spf13/viper"
 )
 
@@ -25,4 +26,15 @@ func InitMysql() {
 // GetDB is
 func GetDB() *gorm.DB {
 	return db
+}
+
+func InitSqlite() {
+	var err error
+	db, err = gorm.Open("sqlite3", "./inventory.sqlite")
+	if err != nil {
+		log.Println(err)
+		panic("failed to connect database, sqlite")
+	} else {
+		log.Println("success connect sqlite")
+	}
 }

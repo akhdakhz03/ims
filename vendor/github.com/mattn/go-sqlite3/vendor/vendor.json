@@ -1,0 +1,31 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "PN9/xyf4NSCFaOmlGtxK3Rkvd6Q=",
+			"path": "github.com/PuerkitoBio/goquery",
+			"revision": "3dcf72e6c17f694381a21592651ca1464ded0e10",
+			"revisionTime": "2019-01-09T23:07:04Z"
+		},
+		{
+			"checksumSHA1": "PzKIldA73tj37mG58X1mn8XmEP0=",
+			"path": "github.com/andybalholm/cascadia",
+			"revision": "680b6a57bda4f657485ad44bdea42342ead737bc",
+			"revisionTime": "2018-10-12T15:44:24Z"
+		},
+		{
+			"checksumSHA1": "dK+OnaUYwvm0Ey/Z7Ox59youoo8=",
+			"path": "golang.org/x/net/html",
+			"revision": "da137c7871d730100384dbcf36e6f8fa493aef5b",
+			"revisionTime": "2019-06-28T18:40:41Z"
+		},
+		{
+			"checksumSHA1": "EyHxARXNgW+jgU4s7K2Vig1fWFk=",
+			"path": "golang.org/x/net/html/atom",
+			"revision": "da137c7871d730100384dbcf36e6f8fa493aef5b",
+			"revisionTime": "2019-06-28T18:40:41Z"
+		}
+	],
+	"rootPath": "github.com/mattn/go-sqlite3"
+}

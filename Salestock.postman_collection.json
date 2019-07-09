@@ -1,0 +1,361 @@
+{
+	"info": {
+		"_postman_id": "b263e519-96f5-4659-85d8-49bf5ed67632",
+		"name": "Salestock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getBarangMasuk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}get_barang_masuk?limit=10&offset=1",
+					"host": [
+						"{{base_url}}get_barang_masuk"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10",
+							"description": "limit how much item will display"
+						},
+						{
+							"key": "offset",
+							"value": "1",
+							"description": "pagination that limit "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBarangKeluar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}get_barang_keluar?limit=10&offset=0",
+					"host": [
+						"{{base_url}}get_barang_keluar"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10",
+							"description": "limit how much item will display"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "pagination that limit "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStockBarang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}get_stok_barang?limit=10&offset=0",
+					"host": [
+						"{{base_url}}get_stok_barang"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10",
+							"description": "limit how much item will display"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "pagination that limit "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLaporanNilaiBarang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}laporan_nilai_barang",
+					"host": [
+						"{{base_url}}laporan_nilai_barang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLaporanPenjualan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}laporan_penjualan?date_start=2017-12-01&date_end=2017-12-31",
+					"host": [
+						"{{base_url}}laporan_penjualan"
+					],
+					"query": [
+						{
+							"key": "date_start",
+							"value": "2017-12-01"
+						},
+						{
+							"key": "date_end",
+							"value": "2017-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InputBarangMasuk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "SSI-D01401071-LL-RED",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_pemesanan",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_diterima",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "harga_beli",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "nomor_kwitansi",
+							"value": "20180102-69539",
+							"type": "text"
+						},
+						{
+							"key": "catatan",
+							"value": "2018/01/06 terima 47; Masih Menunggu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}submit_barang_masuk",
+					"host": [
+						"{{base_url}}submit_barang_masuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InputBarangKeluar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "SSI-D01401071-LL-RED",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_keluar",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "harga_jual",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "catatan",
+							"value": "asdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}submit_barang_keluar",
+					"host": [
+						"{{base_url}}submit_barang_keluar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBarangMasuk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}update_barang_masuk",
+					"host": [
+						"{{base_url}}update_barang_masuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBarangMasuk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "122",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}delete_barang_masuk",
+					"host": [
+						"{{base_url}}delete_barang_masuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBarangKeluar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}delete_barang_keluar",
+					"host": [
+						"{{base_url}}delete_barang_keluar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStokBarang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "stok",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "nama_produk",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}update_stok_barang",
+					"host": [
+						"{{base_url}}update_stok_barang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submit_stok_barang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "stok",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "nama_produk",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}submit_stok_barang",
+					"host": [
+						"{{base_url}}submit_stok_barang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downloadCSV",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "filename",
+							"value": "penjualan",
+							"description": "penjualan = laporan_penjualan | nilai_barang =  laporan_nilai_barang",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}download_csv",
+					"host": [
+						"{{base_url}}download_csv"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
